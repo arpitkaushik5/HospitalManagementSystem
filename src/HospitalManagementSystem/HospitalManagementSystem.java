@@ -106,8 +106,10 @@ public class HospitalManagementSystem {
             if (resultSet.next()){
                 int count = resultSet.getInt(1);
                 if (count==0){
+                    System.out.println("Booked!!!");
                     return true;
                 } else {
+                    System.out.println("Doctor is not available");
                     return false;
                 }
             }
